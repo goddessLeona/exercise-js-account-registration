@@ -29,3 +29,15 @@ h1 {
 .form {
     background-color: pink;
 }
+
+.nameInput.error {
+    background-color: rgb(206, 109, 109);
+}
+
+.nameInput.valid {
+    background-color: aquamarine;
+}
+
+.nameInput {
+    background-color: bisque;
+}
