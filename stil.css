@@ -27,17 +27,33 @@ h1 {
 }
 
 .form {
+    display: flex;
     background-color: pink;
+    width: 350px;
 }
 
-.nameInput.error {
-    background-color: rgb(206, 109, 109);
-}
-
-.nameInput.valid {
-    background-color: aquamarine;
+.formInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .nameInput {
     background-color: bisque;
+}
+
+.ckeckOk.valid{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(42, 165, 104);
+}
+
+.ckeckOk.error{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(165, 42, 46);
 }

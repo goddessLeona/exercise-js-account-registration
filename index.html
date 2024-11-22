@@ -10,13 +10,45 @@
     <div class="cointainer">
       <h1>Wellcome to my form exercise</h1>
       <fieldset class="form">
-        <form>
-          <label class="nameLabel">Name</label>
-          <input
-            class="nameInput"
-            type="text"
-            placeholder="Fill in full name"
-          />
+        <form class=formInputs>
+
+          <div>
+            <label class="nameLabel">Name</label>
+            <input
+                class="nameInput"
+                type="text"
+                placeholder="Fill in full name"
+                required
+            />
+          </div>
+
+          <div>
+            <label class="nameUsername">Username</label>
+            <input
+                class="usernameInput"
+                type="text"
+                placeholder="Fill in a Username"
+                required
+            />
+          </div>
+
+          <div>
+            <label class="namePassword">Password</label>
+            <input
+                class="paswordInput"
+                type="password"
+                placeholder="Fill in a password"
+                required
+            />
+            <div class="ckeckOk"></div>
+            <input
+                class="paswordInputConfirm"
+                type="password"
+                placeholder="Confirm password"
+                required
+            />
+          </div>
+
         </form>
       </fieldset>
     </div>
