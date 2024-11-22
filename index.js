@@ -6,19 +6,24 @@ const userLabel = document.querySelector(".nameUsername");
 const userInput = document.querySelector(".usernameInput");
 const inputPassword = document.querySelector(".paswordInput");
 const inputPasswordC = document.querySelector(".paswordInputConfirm");
+const borderValidator = document.querySelector(".paswordInputConfirm");
 const labelPassword = document.querySelector(".namePassword");
+const validatePassword = document.querySelector(".ckeckOkPassword");
+
 
 
 // cklick on label get focus on the input 
 
 nameLabel.addEventListener("click", (event) =>{
-    console.log("it is working");
     fieldest.focus();
 })
 
 userLabel.addEventListener("click", (event) =>{
-    console.log("working")
     userInput.focus();
+})
+
+labelPassword.addEventListener("click", (event) =>{
+    inputPassword.focus();
 })
 
 // get Password checked min 8 characters
@@ -42,5 +47,16 @@ inputPassword.addEventListener("input", (event) => {
 // confirm the password
 
 inputPasswordC.addEventListener("input", (event) =>{
-   
+   const values = event.target.value;
+
+   if(values.length && values != inputPassword.value){
+    console.log("not the same");
+    validatePassword.classList.add("not");
+    validatePassword.classList.remove("correct");
+
+   }else{
+    console.log("It is the same");
+    validatePassword.classList.remove("not");
+    validatePassword.classList.add("correct");
+   }
 })
