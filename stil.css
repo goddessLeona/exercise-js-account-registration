@@ -16,7 +16,7 @@ body {
     align-items: center;
     background-color: rgb(78, 82, 105);
     width: auto;
-    height: 20rem;
+    height: auto;
     padding: 25px;
     border: 2px solid black;
 }

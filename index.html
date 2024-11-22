@@ -12,48 +12,63 @@
       <fieldset class="form">
         <form class=formInputs>
 
-          <div>
-            <label class="nameLabel">Name</label>
-            <input
-                class="nameInput"
-                type="text"
-                placeholder="Fill in full name"
-                required
-            />
-          </div>
-
-          <div>
-            <label class="nameUsername">Username</label>
-            <input
-                class="usernameInput"
-                type="text"
-                placeholder="Fill in a Username"
-                required
-            />
-          </div>
-
-          <div>
-            <div class="boxPassword">
-                <label class="namePassword">Password</label>
+            <!--Name-->
+            <div>
+                <label class="nameLabel">Name</label>
                 <input
-                    class="paswordInput"
-                    type="password"
-                    placeholder="Fill in a password"
+                    class="nameInput"
+                    type="text"
+                    placeholder="Fill in full name"
                     required
                 />
-                <div class="ckeckOk"></div>
             </div>
+            <!--UserName-->
+            <div>
+                <label class="nameUsername">Username</label>
+                <input
+                    class="usernameInput"
+                    type="text"
+                    placeholder="Fill in a Username"
+                    required
+                />
+            </div>
+            <!--Password and confirm password-->
+            <div>
+                <div class="boxPassword">
+                    <label class="namePassword">Password</label>
+                    <input
+                        class="paswordInput"
+                        type="password"
+                        placeholder="Fill in a password"
+                        required
+                    />
+                    <div class="ckeckOk"></div>
+                </div>
+            
                 <div class="boxPasswordConfirm">
+                    <input
+                        class="paswordInputConfirm"
+                        type="password"
+                        placeholder="Confirm password"
+                        required
+                    />
+                    <div class="ckeckOkPassword"></div>
+                </div>
+            </div>
+            <!--E-mail-->
+            <div>
+                <label class="email">E-mail</label>
                 <input
-                    class="paswordInputConfirm"
-                    type="password"
-                    placeholder="Confirm password"
+                    class="emailInput"
+                    type="email"
+                    placeholder="Your e-mail address"
                     required
                 />
-                <div class="ckeckOkPassword"></div>
             </div>
-          </div>
-
+            <!--Submit-->
+            <div>
+            <button class="btn">Submit</button>
+            </div>
         </form>
       </fieldset>
     </div>

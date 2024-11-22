@@ -9,6 +9,7 @@ const inputPasswordC = document.querySelector(".paswordInputConfirm");
 const borderValidator = document.querySelector(".paswordInputConfirm");
 const labelPassword = document.querySelector(".namePassword");
 const validatePassword = document.querySelector(".ckeckOkPassword");
+const button = document.querySelector(".btn");
 
 
 
@@ -60,3 +61,6 @@ inputPasswordC.addEventListener("input", (event) =>{
     validatePassword.classList.add("correct");
    }
 })
+
+// submit momentet
+
