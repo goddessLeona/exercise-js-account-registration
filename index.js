@@ -10,6 +10,11 @@ const borderValidator = document.querySelector(".paswordInputConfirm");
 const labelPassword = document.querySelector(".namePassword");
 const validatePassword = document.querySelector(".ckeckOkPassword");
 const button = document.querySelector(".btn");
+const labelemail = document.querySelector(".email");
+const inputemail = document.querySelector(".emailInput");
+const submit = document.querySelector(".btn")
+const formImputs = document.querySelector(".formInputs");
+
 
 
 
@@ -25,6 +30,10 @@ userLabel.addEventListener("click", (event) =>{
 
 labelPassword.addEventListener("click", (event) =>{
     inputPassword.focus();
+})
+
+labelemail.addEventListener("click", (event) =>{
+    inputemail.focus();
 })
 
 // get Password checked min 8 characters
@@ -64,3 +73,15 @@ inputPasswordC.addEventListener("input", (event) =>{
 
 // submit momentet
 
+
+formImputs.addEventListener("submit", (event) =>{
+    event.preventDefault();
+
+    const RegistrationData = {
+      name: fieldest.value,
+      username: userInput.value,
+      password: inputPasswordC.value,
+      email: inputemail.value,
+    };
+    console.log(RegistrationData);
+})
