@@ -88,11 +88,14 @@ h1 {
     background-color: rgb(165, 42, 56);
 }
 
-/*
-.paswordInputConfirm.not{
-    border-color: brown;
+.btn.knapp{
+    display: flex;
+    background-color: rgb(56, 87, 160);
+    color: black;
+    font-size: 1rem;
+    border: 2px solid black;
 }
 
-.paswordInputConfirm.right{
-    border-color: rgb(42, 165, 50);
-}*/
+.btn{
+    display: none;
+}

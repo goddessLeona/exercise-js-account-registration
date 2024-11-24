@@ -44,11 +44,11 @@ inputPassword.addEventListener("input", (event) => {
   const value = event.target.value;
 
   if (valid8Letters(value)) {
-    console.log("value is valid");
+    
     validator.classList.add("valid");
     validator.classList.remove("error");
   } else {
-    console.log("value is NOT valid");
+    
     validator.classList.remove("valid");
     validator.classList.add("error");
   }
@@ -60,21 +60,23 @@ inputPasswordC.addEventListener("input", (event) =>{
    const values = event.target.value;
 
    if(values.length && values != inputPassword.value){
-    console.log("not the same");
+    
     validatePassword.classList.add("not");
     validatePassword.classList.remove("correct");
+    button.classList.remove("knapp");
 
    }else{
-    console.log("It is the same");
+    
     validatePassword.classList.remove("not");
     validatePassword.classList.add("correct");
+    button.classList.add("knapp");
    }
 })
 
 // submit momentet
 
 
-formImputs.addEventListener("submit", (event) =>{
+formImputs.addEventListener("submit",(event) =>{
     event.preventDefault();
 
     const RegistrationData = {
@@ -83,5 +85,6 @@ formImputs.addEventListener("submit", (event) =>{
       password: inputPasswordC.value,
       email: inputemail.value,
     };
+    formImputs.reset();
     console.log(RegistrationData);
 })
