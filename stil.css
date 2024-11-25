@@ -92,13 +92,6 @@ h1 {
     background-color: #d5cee8;
 }
 
-/*.ckeckOk.valid{
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(42, 165, 104);
-}*/
 
 .paswordInput.valid{
     border: 2px solid green;
@@ -120,38 +113,14 @@ h1 {
     background-color: #b76f7b;
 }
 
-/*.ckeckOk.error{
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(165, 42, 46);
-}*/
-
-/*.ckeckOkPassword.correct{
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(42, 165, 104);
-    margin-left: 23.5px;
-}*/
-
-/*.ckeckOkPassword.not{
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    margin-left: 23.5px;
-    background-color: rgb(165, 42, 56);
-}*/
 
 .btn.knapp{
     display: flex;
-    background-color: rgb(56, 87, 160);
+    background-color: rgb(125, 116, 204);
     color: black;
     font-size: 1rem;
     border: 2px solid black;
+    margin-left: 130px;
 }
 
 .btn{

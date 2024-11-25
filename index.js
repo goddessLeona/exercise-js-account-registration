@@ -84,5 +84,8 @@ formImputs.addEventListener("submit",(event) =>{
       email: inputemail.value,
     };
     formImputs.reset();
-    console.log(RegistrationData);
+    for(const data in RegistrationData){
+        const info = RegistrationData[data];
+        console.log(data +": "+ info);
+    }
 })
