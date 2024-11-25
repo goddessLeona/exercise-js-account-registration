@@ -23,37 +23,73 @@ body {
 
 h1 {
     margin: 0px;
-    padding-bottom: 2rem;
 }
 
 .form {
     display: flex;
-    background-color: pink;
-    width: 350px;
+    background-color: rgb(146, 128, 153);
+    width: auto;
+    border: 2px solid black;
 }
 
 .formInputs {
     display: flex;
     flex-direction: column;
+    width: 305px;
     gap: 1rem;
+    padding-top: 20px;
+}
+
+.boxname{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.boxUser{
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+}
+
+.boxEmail{
+    display: flex;
+    flex-direction: row;
+    gap: 2.7rem;
 }
 
 .boxPassword{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.5rem;
     padding-bottom: 10px;
 }
 
 .boxPasswordConfirm{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    padding-left: 85px;
     padding-bottom: 10px;
 }
 
 .nameInput {
-    background-color: bisque;
+    background-color: #d5cee8;
+}
+
+.usernameInput {
+    background-color: #d5cee8;
+}
+
+.emailInput{
+    background-color: #d5cee8;
+}
+
+.paswordInput{
+    background-color: #d5cee8;
+}
+
+.paswordInputConfirm{
+    background-color: #d5cee8;
 }
 
 .ckeckOk.valid{
@@ -98,4 +134,8 @@ h1 {
 
 .btn{
     display: none;
+}
+
+.fox{
+    width: 10rem;
 }
