@@ -114,6 +114,7 @@ h1 {
     width: 20px;
     height: 20px;
     background-color: rgb(42, 165, 104);
+    margin-left: 23.5px;
 }
 
 .ckeckOkPassword.not{
@@ -121,6 +122,7 @@ h1 {
     border: 1px solid black;
     width: 20px;
     height: 20px;
+    margin-left: 23.5px;
     background-color: rgb(165, 42, 56);
 }
 
