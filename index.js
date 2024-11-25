@@ -16,8 +16,6 @@ const submit = document.querySelector(".btn")
 const formImputs = document.querySelector(".formInputs");
 
 
-
-
 // cklick on label get focus on the input 
 
 nameLabel.addEventListener("click", (event) =>{
@@ -45,12 +43,12 @@ inputPassword.addEventListener("input", (event) => {
 
   if (valid8Letters(value)) {
     
-    validator.classList.add("valid");
-    validator.classList.remove("error");
+    inputPassword.classList.add("valid");
+    inputPassword.classList.remove("error");
   } else {
     
-    validator.classList.remove("valid");
-    validator.classList.add("error");
+    inputPassword.classList.remove("valid")
+    inputPassword.classList.add("error");
   }
 });
 
@@ -61,14 +59,14 @@ inputPasswordC.addEventListener("input", (event) =>{
 
    if(values.length && values != inputPassword.value){
     
-    validatePassword.classList.add("not");
-    validatePassword.classList.remove("correct");
+    inputPasswordC.classList.add("not");
+    inputPasswordC.classList.remove("correct");
     button.classList.remove("knapp");
 
    }else{
     
-    validatePassword.classList.remove("not");
-    validatePassword.classList.add("correct");
+    inputPasswordC.classList.remove("not");
+    inputPasswordC.classList.add("correct");
     button.classList.add("knapp");
    }
 })

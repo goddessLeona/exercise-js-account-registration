@@ -92,39 +92,59 @@ h1 {
     background-color: #d5cee8;
 }
 
-.ckeckOk.valid{
+/*.ckeckOk.valid{
     border-radius: 50%;
     border: 1px solid black;
     width: 20px;
     height: 20px;
     background-color: rgb(42, 165, 104);
+}*/
+
+.paswordInput.valid{
+    border: 2px solid green;
+    background-color: #89be9e;
 }
 
-.ckeckOk.error{
+.paswordInput.error{
+    border: 2px solid rgb(199, 89, 89);
+    background-color: #b76f7b;
+}
+
+.paswordInputConfirm.correct{
+    border: 2px solid green;
+    background-color: #89be9e;
+}
+
+.paswordInputConfirm.not{
+    border: 2px solid rgb(199, 89, 89);
+    background-color: #b76f7b;
+}
+
+/*.ckeckOk.error{
     border-radius: 50%;
     border: 1px solid black;
     width: 20px;
     height: 20px;
     background-color: rgb(165, 42, 46);
-}
+}*/
 
-.ckeckOkPassword.correct{
+/*.ckeckOkPassword.correct{
     border-radius: 50%;
     border: 1px solid black;
     width: 20px;
     height: 20px;
     background-color: rgb(42, 165, 104);
     margin-left: 23.5px;
-}
+}*/
 
-.ckeckOkPassword.not{
+/*.ckeckOkPassword.not{
     border-radius: 50%;
     border: 1px solid black;
     width: 20px;
     height: 20px;
     margin-left: 23.5px;
     background-color: rgb(165, 42, 56);
-}
+}*/
 
 .btn.knapp{
     display: flex;
