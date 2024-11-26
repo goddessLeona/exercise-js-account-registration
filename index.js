@@ -76,6 +76,9 @@ inputPasswordC.addEventListener("input", (event) =>{
 
 formImputs.addEventListener("submit",(event) =>{
     event.preventDefault();
+    inputPasswordC.classList.remove("correct");
+    inputPassword.classList.remove("valid");
+    button.classList.remove("knapp");
 
     const RegistrationData = {
       name: fieldest.value,
@@ -83,7 +86,9 @@ formImputs.addEventListener("submit",(event) =>{
       password: inputPasswordC.value,
       email: inputemail.value,
     };
+
     formImputs.reset();
+
     for(const data in RegistrationData){
         const info = RegistrationData[data];
         console.log(data +": "+ info);
